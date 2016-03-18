@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<title></title>
+</head>
+<body>
+	<div id="v3cont_id">
+	<div class="h_img"><img src="./img/663.jpg" alt=""></div>
+		<div class="z_dd w95"><span><font style="color: #00a5eb;">导读&nbsp;|&nbsp;&nbsp;</font>第十二届全国人民代表大会第四次会议和政协第十二届全国委员会第四次会议，将于2016年3月5日和3月3日在北京开幕。</span></div>
+		<div id="slideBox" class="slideBox">
+			<div class="bd">
+				<ul>
+					<li>
+						<a class="pic" href=""><img src="./img/299.jpg" ></a>
+						<a class="tit" href="">这三年|习近平连续四年参加上海团审议，代表称把工作做实</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="zt-head-panel"><div class="zt-head zt-head1"><h2>两会动态<a href="">更多&gt;&gt;</a></h2></div></div>
+		<div class="news_list">
+			<ul>
+				<li><a href=""><img src="./img/180.jpg"><span class="newslistspan">出席解放军代表团会议后，习近平和八位军队人大代表说了啥？</span></a></li>
+				<li><a href=""><img src="./img/853.jpg"><span class="newslistspan">“学习中国”：习近平连续四年两会同一时间强调同一个主题</span></a></li>
+				<li><a href=""><img src="./img/726.jpg"><span class="newslistspan">习近平等党和国家领导人出席全国政协十二届四次会议闭幕大会</span></a></li>
+				<li><a href=""><img src="./img/217.jpg"><span class="newslistspan">习近平连续四年下解放军团，这次强调了啥</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- footer开始 -->
+	<div class="footer">
+		<ul>
+			<li><a href="">关于澎湃</a></li>
+			<li><a href="">联系我们</a></li>
+			<li><a href="">友情链接</a></li>
+			<li><a href="">版权声明</a></li>
+			<li><a href="">在澎湃工作</a></li>
+			<li><a href="">澎湃广告</a></li>
+		</ul>
+		<div class="footers">
+			<p>Copyright 2014 The Paper All rights reserved.上海东方报业有限公司</p>
+			<p>沪ICP备14003370号 | 互联网新闻信息服务许可证：3112014002</p>
+		</div>
+	</div>
+	<!-- footer结束 -->
+
+
+
+	
+
+	<script src="js/zepto.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+<script>
+	document.addEventerListener("plusready",function(){
+		var w=plus.webview.currentWebview();
+		var id=w.xx;
+		var shuju=liebiaos.filter(function(v,i){
+			return v.id==id;
+		})
+		// $("h1").text(shuju[0].title);
+		// $(".p").text(shuju[0].content);
+		$("nav").tap(function(){
+			w.close();
+		})
+	})
+</script>
+</html>
